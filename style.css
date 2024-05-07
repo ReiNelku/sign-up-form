@@ -12,11 +12,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 aside {
   height: 100vh;
-  max-width: 33vw;
+  flex-basis: 33vw;
   position: relative;
   background: url("green-leaf.jpg") center no-repeat;
   background-size: cover;
@@ -51,4 +52,84 @@ aside {
 
 .background-credit a {
   color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eee;
+  flex: 1;
+}
+
+.title {
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  max-width: 50ch;
+}
+
+.form-fields {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  color: #444;
+  font-family: Verdana, sans-serif;
+  font-weight: 600;
+  box-shadow: 2px 5px 5px #ccc;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+input {
+  box-sizing: border-box;
+  height: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  padding: 0 0.5rem;
+}
+
+input:focus {
+  outline: 1px solid blue;
+  box-shadow: 2px 3px 3px #ccc;
+}
+
+.form-fields > div {
+  display: flex;
+  padding: 0.5rem 0;
+  gap: 4rem;
+}
+
+.title,
+.form-submit {
+  padding: 2rem;
+}
+
+.form-submit > button {
+  background-color: #596d48;
+  color: #fff;
+  font-weight: bold;
+  border: 0 solid #596d48;
+  border-radius: 4px;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+}
+
+.form-submit > p {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+.form-submit > p > a {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: bold;
 }

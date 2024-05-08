@@ -102,6 +102,15 @@ input:focus {
   box-shadow: 2px 3px 3px #ccc;
 }
 
+input:invalid {
+  outline: 1px solid red;
+}
+
+.error {
+  color: red;
+  font-size: 0.6rem;
+}
+
 .form-fields > div {
   display: flex;
   padding: 0.5rem 0;

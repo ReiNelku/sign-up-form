@@ -109,6 +109,7 @@ input:invalid {
 .error {
   color: red;
   font-size: 0.6rem;
+  margin: 0;
 }
 
 .form-fields > div {
